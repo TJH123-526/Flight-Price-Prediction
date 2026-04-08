@@ -30,32 +30,25 @@ Downloads/
 
 ## Kernel Setup
 1. Then, install all dependency, ```pip install -r C:/Users/User/Downloads/FlightPricePrediction/0_Setup/requirements.txt```
-2. Then, create an external kernel, ```python -m ipykernel install --user --name=ImageCaption --display-name "ImageCaption"```
-3. Open ```C:\Users\User\Downloads\ImageCaption\2_Model\LSTM\ImageCaption30K_LSTM.ipynb``` as Jupyter Notebook and then select "ImageCaption" kernel
+2. Then, create an external kernel, ```python -m ipykernel install --user --name=FlightPricePrediction --display-name "FlightPricePrediction"```
+3. Open ```C:\Users\User\Downloads\FlightPricePrediction\2_Model\Regressor\RandomForestRegressor.ipynb``` as Jupyter Notebook and then select "FlightPricePrediction" kernel
 
 In case need to add/update the external kernel:
 1. Open Anancoda Prompt
-2. Then, activate the environment, ```conda activate ImageCaption```
+2. Then, activate the environment, ```conda activate FlightPricePrediction```
 3. Then, add/modify using ```pip install``` or ```pip uninstall```
 4. Restart kernel in Jupyter Notebook
 
 In case need to remove the external kernel:
 1. Open Anancoda Prompt
 2. To check available kernel to delete, ```jupyter kernelspec list```
-3. To remove kernel from Jupyter Notebook, ```jupyter kernelspec uninstall imagecaption```
-4. For clean up, remove the entire folder, ```C:\Users\User\anaconda3\envs\ImageCaption``` or ```conda remove --name ImageCaption --all```
-
+3. To remove kernel from Jupyter Notebook, ```jupyter kernelspec uninstall flightpriceprediction```
+4. For clean up, remove the entire folder, ```C:\Users\User\anaconda3\envs\FlightPricePrediction``` or ```conda remove --name FlightPricePrediction --all```
 
 # 1_Data
-1. Flickr30k dataset (https://www.kaggle.com/datasets/hsankesara/flickr-image-dataset) for medium-sized image captioning
-2. GloVe: Global Vectors for Word Representation (https://nlp.stanford.edu/projects/glove/) for LSTM embedding purpose
+Original dataset from, ```https://www.kaggle.com/datasets/shubhambathwal/flight-price-prediction```, Dataset.csv
 
 # 2_Model
-## Data Cleaning
-- Image Augmentation
-- Remove unnecessary string on a caption
-- Remove extreme short and long caption
-
 ## EDA
 ### LSTM
 #### Dataset
