@@ -52,91 +52,31 @@ Original dataset from, ```https://www.kaggle.com/datasets/shubhambathwal/flight-
 
 # 2_Model
 ## EDA
+More detail can refer ```./1_Data/report.html```
 ![Screenshot](./Screenshots/Report.png)
 
---- More detail can refer ```./1_Data/report.html``` ---
+## Preprocess
+- Drop column, 'Unnamed: 0' and 'flight' since both are no any meaningful.
+- One hot encoding on another column, so all data will be 1 and 0 (True and False).
+- For classifier, price need convert all contiounous data into 2 group (0 as budget and 1 as non budget) based on the median price.
+- X: Entire One Hot Encoded and Cleaned Dataset exclude price column
+- y: price column
+-Data Spltting:
+| :---: | :---: |
+| Train | 80% |
+| Test | 20% |
 
-### LSTM
-#### Dataset
-![Screenshot](./Screenshots/Dataset_LSTM.png)
-
-#### Caption Length
-![Screenshot](./Screenshots/CaptionLength_LSTM.png)
-
-#### Word Occurrences
-![Screenshot](./Screenshots/WordOccurrences_LSTM.png)
-
-### Transformer
-#### Dataset
-![Screenshot](./Screenshots/Dataset_Transformer.png)
-
-#### Caption Length
-![Screenshot](./Screenshots/CaptionLength_Transformer.png)
-
-#### Word Occurrences
-![Screenshot](./Screenshots/WordOccurrences_Transformer.png)
-
-## Data Splitting
-|  | LSTM | Transformer |
-| :---: | :---: | :---: |
-| Train | 75% | 78% |
-| Validation | 15% | 20% |
-| Test | 10% | 2% |
-
-## Build
-### LSTM
-- LSTM is the baseline and the simplest model to explore.
-- Using EfficientNet convolutional neural network (CNN) on LSTM with InceptionV3 as input using image features and embedding with GLove Dataset.
-
-### Transformer
-- Transfomer has stated a better result compare to LSTM, so I explore it after LSTM.
-- Using EfficientNet convolutional neural network (CNN) on decoded and encoded image with positional embedding.
+## Train
+Model used for experimental purpose are RandomForestRegressor, LightGBMRegressor, RandomForestClassifier and LightGBMClassifier.
 
 ## Performance
-### LSTM
-#### Training
-At Final Epoch 45/100:
-- Training loss: 3.4252
-- Validation loss: 3.5931
 
-![Screenshot](./Screenshots/Training_LSTM.png)
+| Model | Score (Before Grid Serach) | Score (After Grid Search) |
+| :---: | :---: | :---: |
+| RandomForestRegressor | 98.53% | 98.63% |
+| LightGBMRegressor | 97.10% | 98.71% |
+| RandomForestClassifier | 96.96% | 97.21% |
+| LightGBMClassifier | 94.85% | 95.67% |
 
-#### Result
-![Screenshot](./Screenshots/Result1_LSTM.png)
-
-![Screenshot](./Screenshots/Result2_LSTM.png)
-
-Cons:
-- Consume more time on image extraction and training
-- The lowest accuracy (2%)
-- Bad at single and multiple word learning
-
-Pros:
-- The loss is low (3.5)
-- Better generalization with some fine tuning on label smoothing, image augmentation, embedding, learning rate, dense layer and dropout.
-
-### Transformer
-#### Training
-At Final Epoch 9/30:
-- Training loss: 13.2212 
-- Training accuracy: 0.4367
-- Validation loss: 13.5932 
-- Validation Accuracy: 0.4087
-
-![Screenshot](./Screenshots/Training_Transformer.png)
-
-#### Result
-![Screenshot](./Screenshots/Result1_Transformer.png)
-
-![Screenshot](./Screenshots/Result2_Transformer.png)
-
-Cons:
-- Bad at multiple word learning
-- The loss is higher than LSTM (13.5)
-
-Pros:
-- Better at single word learning compare to LSTM
-- Consume lesser time on image encode and decode and training time is shorter compare to LSTM
-- Better accuracy than LSTM (40%)
 - Better generalization with some fine tuning on label smoothing, image augmentation, embedding, learning rate, dense layer and dropout.
 
