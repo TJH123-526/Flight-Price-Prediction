@@ -22,7 +22,11 @@ Downloads/
     |       └── RandomForestRegressor.ipynb
     ├── README.md
     └── Screenshots
-            └── Report.png
+            ├── LGBMC.png
+            ├── LGBMR.png
+            ├── Report.png
+            ├── RFC.png
+            └── RFR.png
 ```
 
 ## Virtual Envitronment Setup
@@ -78,3 +82,7 @@ Model used for experimental purpose are RandomForestRegressor, LightGBMRegressor
 | RandomForestClassifier | 96.96% | 97.21% |
 | LightGBMClassifier | 94.85% | 95.67% |
 
+Importance Factor from each model:
+| :---: | :---: |
+| ![Screenshot](./Screenshots/RFC.png) | ![Screenshot](./Screenshots/RFR.png) |
+| ![Screenshot](./Screenshots/LGBMC.png) | ![Screenshot](./Screenshots/LGBMR.png) |
