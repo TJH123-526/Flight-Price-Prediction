@@ -50,7 +50,7 @@ Original dataset from, ```https://www.kaggle.com/datasets/shubhambathwal/flight-
 
 # 2_Model
 ## EDA
-[Link Text](1_Data/report.html)
+[Link Text](./1_Data/report.html)
 
 ### LSTM
 #### Dataset
