@@ -52,7 +52,7 @@ In case need to remove the external kernel:
 4. For clean up, remove the entire folder, ```C:\Users\User\anaconda3\envs\FlightPricePrediction``` or ```conda remove --name FlightPricePrediction --all```
 
 # 1_Data
-Original dataset from, ```https://www.kaggle.com/datasets/shubhambathwal/flight-price-prediction```, Dataset.csv
+Original dataset from, ```https://www.kaggle.com/datasets/shubhambathwal/flight-price-prediction```, 300K+ rows in Dataset.csv
 
 # 2_Model
 ## EDA
@@ -97,5 +97,5 @@ Model used for experimental purpose are RandomForestRegressor, LightGBMRegressor
 ![Screenshot](./Screenshots/LGBMR.png)
 
 ## Summary
-Overall, LightGBMRegressor has the best result of 98.63% after grid search the best hyperparameter. As a result, duration, days_left and class are the main factor to get a better price of the flight. Means the more duration of the flight, the more days left before booking, the more higher flight class, the more affortable the flight price.
+Overall, LightGBMRegressor has the best result of 98.63% after grid search the best hyperparameter. Regressor model is better than classifier model since it is more suitable on continouous data instead of distinct data group. LightGBM model is better than RandomForest since it can archieve higher accuracy on current large dataset. As a result, duration, days_left and class are the main factor to get a better price of the flight. Means the more duration of the flight, the more days left before booking, the more higher flight class, the more affortable the flight price.
 
