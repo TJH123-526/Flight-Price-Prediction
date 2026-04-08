@@ -1,2 +1,2 @@
 # Flight-Price-Prediction
-Predict the cheapest flight price and its factor
+Predict the cheapest flight price.
