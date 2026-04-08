@@ -84,6 +84,9 @@ Model used for experimental purpose are RandomForestRegressor, LightGBMRegressor
 
 Importance Factor from each model:
 
-| :---: | :---: |
-| ![Screenshot](./Screenshots/RFC.png) | ![Screenshot](./Screenshots/RFR.png) |
-| ![Screenshot](./Screenshots/LGBMC.png) | ![Screenshot](./Screenshots/LGBMR.png) |
+| RFC | RFR |
+| --- | --- |
+| <img src="./Screenshots/RFC.png" width="250"> | <img src="./Screenshots/RFR.png" width="250"> |
+| LGBMC | LGBMR |
+| <img src="./Screenshots/LGBMC.png" width="250"> | <img src="./Screenshots/LGBMR.png" width="250"> |
+
