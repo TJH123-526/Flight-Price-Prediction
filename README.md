@@ -55,7 +55,7 @@ In case need to remove the external kernel:
 Original dataset from, ```https://www.kaggle.com/datasets/shubhambathwal/flight-price-prediction```, 300K+ rows in Dataset.csv
 
 # 2_Model
-## EDA
+## Exploratory Data Analysis (EDA)
 More detail can refer ```./1_Data/report.html```
 ![Screenshot](./Screenshots/Report.png)
 
