@@ -68,10 +68,9 @@ More detail can refer ```./1_Data/report.html```
 - y: price column
 -Data Spltting:
 
-| | |
-| :---: | :---: |
 | Train | 80% |
 | Test | 20% |
+| :---: | :---: |
 
 ## Train
 Model used for experimental purpose are RandomForestRegressor, LightGBMRegressor, RandomForestClassifier and LightGBMClassifier.
