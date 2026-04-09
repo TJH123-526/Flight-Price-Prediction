@@ -67,11 +67,10 @@ More detail can refer ```./1_Data/report.html```
 - X: Entire One Hot Encoded and Cleaned Dataset exclude price column
 - y: price column
 -Data Spltting:
-
+| Data | Usage |
+| :---: | :---: |
 | Train | 80% |
-| :---: | :---: |
 | Test | 20% |
-| :---: | :---: |
 
 ## Train
 Model used for experimental purpose are RandomForestRegressor, LightGBMRegressor, RandomForestClassifier and LightGBMClassifier.
