@@ -67,6 +67,7 @@ More detail can refer ```./1_Data/report.html```
 - X: Entire One Hot Encoded and Cleaned Dataset exclude price column
 - y: price column
 -Data Spltting:
+
 | Data | Usage |
 | :---: | :---: |
 | Train | 80% |
