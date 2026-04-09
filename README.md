@@ -66,8 +66,7 @@ More detail can refer ```./1_Data/report.html```
 - For classifier, price need convert all contiounous data into 2 distinct group (0 as budget and 1 as non budget) based on the median price.
 - X: Entire One Hot Encoded and Cleaned Dataset exclude price column
 - y: price column
--Data Spltting:
-
+- Data Spltting:
 | Data | Usage |
 | :---: | :---: |
 | Train | 80% |
